@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main_align">
+            <div class="main_in">
+                <input class="main_input" type="number" value="0" min="0" max="9"></input>
+                <input class="main_input" type="number" value="1" min="0" max="9"></input>
+                <input class="main_input" type="number" value="2" min="0" max="9"></input>
+                <input class="main_input" type="number" value="3" min="0" max="9"></input>
+            </div>
+            <div class="main_btn">Проверить</div>
+            <div class="main_out">
+                <div class="main_out-list">
+                    <div class="main_out-item">
+                        <div class="main_out-pos">1</div>
+                        <div class="main_out-pos">2</div>
+                        <div class="main_out-pos">3</div>
+                        <div class="main_out-pos">4</div>
+                    </div>
+                </div>
+                <div class="main_result">
+                    <div class="main_result-item">
+                        <div class="main_result-num" id="cow">К</div>
+                        <div class="main_result-num" id="bull">Б</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="win" class="alert">
+        <div class="win_title">Поздравляю вы победили!</div>
+    </div>
+
+    <div id="info" class="alert">
+        <div class="info_title">Привет, это "Быки и коровы"<br>
+        Суть игры отгадать число состоящее из 4 цифр, причем каждая цифра уникальна<br><br>
+        К - колличество совпавших чисел находящихся не на своём месте<br>
+        Б - колличество совпавших чисел находящихся на своём месте</div>
+        <div class="info_btn">Начать игру?</div>
+    </div>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
